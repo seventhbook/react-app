@@ -34,6 +34,7 @@ class MentorForm extends Component{
     var url='https://react-vercel-abe1d.firebaseio.com/Mentors.json';
     var data=mentorObject;
 
+    const prueb=()=>{
     fetch(url,{
       method:'POST',
       body:JSON.stringify(data),
@@ -42,8 +43,10 @@ class MentorForm extends Component{
       }
     }).then(res=>res.json())
     .catch(error=>console.error("Error: ",error))
-    .then(response=>console.log('Success: ',response));
-
+    .then(response=>{console.log('Success: ',response)
+    window.location.reload()});
+    }
+    prueb();
     
   }
   

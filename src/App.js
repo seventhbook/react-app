@@ -25,7 +25,7 @@ function App() {
           <MentorForm/>
         </Col>
       </Row>
-      <Row className="p-3 mt-3">
+      <Row className="mt-3">
         <Col xs="12" md="8" >
           <MentorList/>
         </Col>
